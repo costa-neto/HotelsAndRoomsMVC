@@ -70,7 +70,10 @@ namespace HotelsAndRoomsMVC.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(room);
+            RoomViewModel model = new RoomViewModel();
+            model.room = room;
+            model.hotels = new SelectList(_context.Hotels.ToList(), "Id", "Name");
+            return View(model);
         }
 
         // GET: Rooms/Edit/5

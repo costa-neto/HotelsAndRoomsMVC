@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotelsAndRoomsMVC.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220408112814_LastVersion")]
-    partial class LastVersion
+    [Migration("20220408114606_FinalVersion")]
+    partial class FinalVersion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,8 +35,8 @@ namespace HotelsAndRoomsMVC.Migrations
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
-                        .HasMaxLength(18)
-                        .HasColumnType("nvarchar(18)");
+                        .HasMaxLength(14)
+                        .HasColumnType("nvarchar(14)");
 
                     b.Property<string>("Description")
                         .IsRequired()

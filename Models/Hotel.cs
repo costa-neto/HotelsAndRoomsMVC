@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HotelsAndRoomsMVC.Models
 {
-    public class Hotel
+    public class Hotel : IValidatableObject
     {
         [Key]
         public string Id { get; set; } = Guid.NewGuid().ToString();
@@ -12,7 +12,7 @@ namespace HotelsAndRoomsMVC.Models
         [StringLength(100)]
         public string Name { get; set; }
         [Required]
-        [StringLength(18)]
+        [StringLength(14)]
         public string CNPJ { get; set; }
         [Required]
         [StringLength(100)]
@@ -23,6 +23,18 @@ namespace HotelsAndRoomsMVC.Models
         public string Description { get; set; }
         public ICollection<Room>? Rooms { get; set; }
         public ICollection<HotelPhotos>? Photos { get; set; }
+
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
+        {
+            var cnpj = new string(CNPJ.ToCharArray()
+                             .Where(c => char.IsDigit(c)).ToArray());
+            if (cnpj.Length != 14)
+            {
+                yield return new ValidationResult(
+                    $"You must enter a valid CNPJ.",
+                    new[] { nameof(CNPJ) });
+            }
+        }
 
     }
 }
