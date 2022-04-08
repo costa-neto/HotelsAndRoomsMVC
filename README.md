@@ -18,7 +18,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Conteinerizar a aplicação
 
 
-## 💻 Tecnologias
+## ⚙️ Tecnologias
 
 * [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 * [Bootstrap](https://getbootstrap.com)
