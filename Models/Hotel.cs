@@ -12,7 +12,7 @@ namespace HotelsAndRoomsMVC.Models
         [StringLength(100)]
         public string Name { get; set; }
         [Required]
-        [StringLength(14)]
+        [StringLength(18)]
         public string CNPJ { get; set; }
         [Required]
         [StringLength(100)]
