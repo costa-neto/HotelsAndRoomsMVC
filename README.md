@@ -16,6 +16,9 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] Crud de Quartos
 - [ ] Manipular imagens
 - [ ] Conteinerizar a aplicação
+- [ ] Aplicar máscara e melhor UX para campo de Preço
+- [ ] Adicionar rota para criar novo quarto a partir da página de detalhes de um Hotel.
+
 
 
 ## ⚙️ Tecnologias
