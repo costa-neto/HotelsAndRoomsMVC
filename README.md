@@ -33,9 +33,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Você instalou a versão mais recente de `Docker`
 
 
-## 🚀 Instalando <nome_do_projeto>
+## 🚀 Instalando HotelsAndRoomsMVC
 
-Para instalar o <nome_do_projeto>, siga estas etapas:
+Para instalar o HotelsAndRoomsMVC, siga estas etapas:
 
 Clone o repositório e execute os comandos:
 ```
@@ -50,17 +50,13 @@ dotnet ef database update
 ```
 
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando HotelsAndRoomsMVC
 
-Para usar <nome_do_projeto>, siga estas etapas:
+Para usar HotelsAndRoomsMVC, siga estas etapas:
 
 ```
 dotnet run
 #ou
 dotnet watch
-#ou
 
 ```
-
-<!-- MARKDOWN>
-[product-screenshot]: repo-image/home.png
