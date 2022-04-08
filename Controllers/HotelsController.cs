@@ -110,6 +110,8 @@ namespace HotelsAndRoomsMVC.Controllers
             {
                 try
                 {
+                    hotel.CNPJ = new string(hotel.CNPJ.ToCharArray()
+                             .Where(c => char.IsDigit(c)).ToArray());
                     _context.Update(hotel);
                     await _context.SaveChangesAsync();
                 }

@@ -45,8 +45,8 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
     <script>
-    $(document).ready(function(){
-        $("#CNPJ").mask("00.000.000/0000-00", { placeholder: "__.___.___/____-__", reverse: true, removeMaskOnSubmit: true });
-    })
-</script>
+        $(document).ready(function(){
+            $("#CNPJ").mask("00.000.000/0000-00", { placeholder: "__.___.___/____-__", reverse: true, removeMaskOnSubmit: true });
+        })
+    </script>
 }
