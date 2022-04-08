@@ -23,7 +23,13 @@ namespace HotelsAndRoomsMVC.Controllers
         // GET: Hotels
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Hotels.ToListAsync());
+            var hotels = await _context.Hotels.ToListAsync();
+            foreach (var h in hotels)
+            {
+                h.CNPJ = Convert.ToUInt64(h.CNPJ).ToString(@"00\.000\.000\/0000\-00");
+            }
+            
+            return View(hotels);
         }
 
         // GET: Hotels/Details/5
@@ -40,6 +46,10 @@ namespace HotelsAndRoomsMVC.Controllers
             {
                 return NotFound();
             }
+            hotel.Rooms = (from room in _context.Rooms 
+                          where room.HotelId.Equals(id)
+                          select room).ToList();
+            Console.WriteLine(hotel.Rooms);
 
             return View(hotel);
         }
