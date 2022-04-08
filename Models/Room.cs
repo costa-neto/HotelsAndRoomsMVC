@@ -24,6 +24,7 @@ namespace HotelsAndRoomsMVC.Models
         [Display(Name = "Num. Of Children")]
         public int NumChildren { get; set; }
         [Required]
+        [DataType(DataType.Currency)]
         public decimal Price { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
