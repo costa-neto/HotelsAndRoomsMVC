@@ -2,7 +2,7 @@
 
 
 
-<img src="repo-image/home.png" alt="home screen">
+[![Home Screen Shot][product-screenshot]]
 
 > Este projeto foi desenvolvido com o objetivo de avaliar a capacidade técnica, crítica e raciocínio lógico do candidato
 ao construir uma funcionalidade de um produto. No caso, um sistema de gerenciamento de Hotéis e Quartos.
@@ -55,3 +55,6 @@ Para usar <nome_do_projeto>, siga estas etapas:
 ```
 <exemplo_de_uso>
 ```
+
+<!-- MARKDOWN>
+[product-screenshot]: repo-image/home.png
