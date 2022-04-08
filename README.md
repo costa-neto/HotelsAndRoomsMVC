@@ -15,6 +15,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [x] CRUD de Hoteís
 - [x] Crud de Quartos
 - [ ] Manipular imagens
+- [ ] Conteinerizar a aplicação
 
 
 ## 💻 Tecnologias
