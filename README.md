@@ -2,7 +2,7 @@
 
 
 
-[![Home Screen Shot][product-screenshot]]
+[![Home Screen Shot][product-screenshot]](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 
 > Este projeto foi desenvolvido com o objetivo de avaliar a capacidade técnica, crítica e raciocínio lógico do candidato
 ao construir uma funcionalidade de um produto. No caso, um sistema de gerenciamento de Hotéis e Quartos.
